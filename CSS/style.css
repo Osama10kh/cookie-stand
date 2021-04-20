@@ -4,8 +4,9 @@ header {
 
 header img {
   width: 200px;
-  border-radius: 200px;
+  border-radius:200px;
 }
+
 
 body header ul {
   display: inline;
@@ -14,11 +15,19 @@ body header ul {
 
 body header ul a {
   text-decoration: none;
-  color: wheat;
+  color:black;
+  font-weight: bold;
+  font-size: large;
   padding: 20px 20px;
 }
 
 a:hover {
-  transition-delay: 400ms;
+  transition-delay: 250ms;
+  transition: 200ms;
   color: blue;
+}
+
+ul li {
+    font-family: 'Courier';
+    font-weight: 700;
 }

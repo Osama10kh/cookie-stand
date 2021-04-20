@@ -44,8 +44,6 @@ function tableHead() {
   thEle.textContent = 'Daily Total';
 }
 
-
-
 function tableFooter() {
   let tabfoot = document.createElement('tr');
   parentElement.appendChild(tabfoot);
@@ -57,7 +55,7 @@ function tableFooter() {
   let sumTotal = 0;
 
   for (let i = 0; i < workingHour.length; i++) {
-    let thEle = document.createElement('th');
+    let thElement = document.createElement('th');
     let totalForHour = 0;
     for (let x = 0; x < Stores.locations.length; x++) {
       totalForHour += Stores.locations[x].cookiesPerHour[i];
