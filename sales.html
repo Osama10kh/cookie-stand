@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sales data</title>
+    <link rel="stylesheet" href="./CSS/sales.css">
 </head>
 <body>
     <header>
         <a href="./index.html">Home</a>
+        <fieldset>
+            <legend>add new location</legend>
+            <form id="form">
+                <label for="locationName">location name</label>
+                <input id="locationName" type="text">
+                <label for="minCust">minimum customer/hr</label>
+                <input id="minCust" type="text">
+                <label for="maxCust">max customer/hr</label>
+                <input id="maxCust" type="text">
+                <label for="avgCookies">avg cookies/customer</label>
+                <input id="avgCookies" type="text">
+
+                <button type="submit">add a new data</button>
+            </form>
+        </fieldset>
     </header>
     <main>
         <div>
-            <table id="salmonCookiesTable">
-                
-            </table>
+            <table id="salmonCookiesTable"></table>
         </div>
     </main>
     <footer></footer>
