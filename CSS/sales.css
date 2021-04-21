@@ -1,0 +1,45 @@
+main div table {
+  color: black;
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  border: outset;
+  margin-top: 50px;
+}
+
+td{
+    border: solid;
+    font-weight: 900;
+}
+
+th{
+    border: solid;
+    border-color: darkred;
+}
+
+fieldset {
+  border: solid;
+  inline-size: min-content;
+  margin-left: 600px;
+}
+
+button {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  border: solid;
+  border-radius: 20px;
+
+}
+
+a:hover {
+  transition-delay: 0.5ms;
+  color: blue;
+  border:solid;
+}

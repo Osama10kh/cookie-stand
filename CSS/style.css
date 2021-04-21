@@ -19,6 +19,8 @@ body header ul a {
   font-weight: bold;
   font-size: large;
   padding: 20px 20px;
+  border: solid;
+  padding-top: 10px;
 }
 
 a:hover {
