@@ -1,21 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
 header {
-  background: rgb(94, 38, 0);
+  background: #2b1e16;
+  border-radius: 30px;
 }
 
 header img {
   width: 200px;
-  border-radius:200px;
+  border-radius: 200px;
 }
-
 
 body header ul {
   display: inline;
   float: right;
 }
 
-body header ul a {
+.nav a {
   text-decoration: none;
-  color:black;
+  color: white;
+  background-color: #2b1e16;
   font-weight: bold;
   font-size: large;
   padding: 20px 20px;
@@ -26,10 +29,66 @@ body header ul a {
 a:hover {
   transition-delay: 250ms;
   transition: 200ms;
-  color: blue;
+  color: #fad586;
+  border-radius: 20px;
 }
 
-ul li {
-    font-family: 'Courier';
-    font-weight: 700;
+.nav {
+  font-family: "Original Surfer", cursive;
+  font-weight: 700;
+}
+
+.data ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #290001;
+}
+
+.main {
+  background-color: #ffefa0;
+}
+
+.e1 {
+  border: 1px solid;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 1250px;
+  border-radius: 30px;
+  background: url("../img/5.jpg");
+}
+.e2 {
+  border: 1px solid;
+  margin-right: 1250px;
+  border-radius: 30px;
+  font-size: large;
+  font-weight: bold;
+  background: url("../img/download\ \(1\).jpg");
+}
+.e3 {
+  border: 1px solid;
+  margin-right: 1250px;
+  border-radius: 30px;
+  font-size: large;
+  font-weight: bold;
+  background: url("../img/download.png");
+}
+.e4 {
+  border: 1px solid;
+  margin-right: 1250px;
+  border-radius: 30px;
+  font-size: large;
+  font-weight: bold;
+  background: url("../img/download\ \(1\).jpg");
+}
+.e5 {
+  border: 1px solid;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 1250px;
+  border-radius: 30px;
+  background: url("../img/5.jpg");
 }
