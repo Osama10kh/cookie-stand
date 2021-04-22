@@ -1,3 +1,7 @@
+body {
+  background: #ffefa0;
+}
+
 main div table {
   color: black;
   width: 960px;
@@ -5,16 +9,19 @@ main div table {
   text-align: center;
   border: outset;
   margin-top: 50px;
+  height: 250px;
 }
 
-td{
-    border: solid;
-    font-weight: 900;
+td {
+  border: solid;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-th{
-    border: solid;
-    border-color: darkred;
+th {
+  border: solid;
+  border-color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 fieldset {
@@ -26,6 +33,13 @@ fieldset {
 button {
   margin-left: 25px;
   margin-top: 20px;
+  border-radius: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover{
+  color:saddlebrown;
+  font-weight: 700;;
 }
 
 a {
@@ -33,13 +47,14 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   border: solid;
   border-radius: 20px;
-
 }
 
 a:hover {
   transition-delay: 0.5ms;
-  color: blue;
-  border:solid;
+  color: white;
+  border: solid;
+  margin-left: 20px;
 }
