@@ -1,60 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background: #ffefa0;
+  font-family: "Original Surfer", cursive;
 }
 
-main div table {
-  color: black;
-  width: 960px;
-  margin: auto;
-  text-align: center;
-  border: outset;
-  margin-top: 50px;
-  height: 250px;
+.salesTable {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
 }
 
-td {
-  border: solid;
+td,
+th {
+  border: 2px solid black;
+  padding: 10px 0;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 th {
-  border: solid;
-  border-color: darkred;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+
+legend {
+  font-weight: 900;
+  text-transform: capitalize;
+  text-shadow: 2px black;
+  letter-spacing: 3px;
 }
 
 fieldset {
-  border: solid;
-  inline-size: min-content;
-  margin-left: 600px;
+  text-transform: capitalize;
+  margin: auto;
+  inline-size: 200px;
+  text-align: center;
+  padding: 20px 70px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+input {
+  margin: 10px 0;
 }
 
 button {
-  margin-left: 25px;
-  margin-top: 20px;
-  border-radius: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font: 8rm Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+  background-color: #04aa6d;
+  color: #f2f2f2;
+  font-weight: 900;
+  margin: 20px;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-button:hover{
-  color:saddlebrown;
-  font-weight: 700;;
+button:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: x-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border: solid;
-  border-radius: 20px;
 }
 
 a:hover {
-  transition-delay: 0.5ms;
-  color: white;
-  border: solid;
-  margin-left: 20px;
 }

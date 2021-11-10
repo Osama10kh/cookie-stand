@@ -1,94 +1,188 @@
 @import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
-header {
-  background: #2b1e16;
-  border-radius: 30px;
+/* font-family: "Original Surfer", cursive; */
+
+/* pag setup ------------------------------------------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-header img {
-  width: 200px;
-  border-radius: 200px;
-}
-
-body header ul {
-  display: inline;
-  float: right;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-  background-color: #2b1e16;
-  font-weight: bold;
-  font-size: large;
-  padding: 20px 20px;
-  border: solid;
-  padding-top: 10px;
-}
-
-a:hover {
-  transition-delay: 250ms;
-  transition: 200ms;
-  color: #fad586;
-  border-radius: 20px;
-}
-
-.nav {
-  font-family: "Original Surfer", cursive;
-  font-weight: 700;
-}
-
-.data ul li {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #212121;
-}
-
-h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #290001;
-}
-
-.main {
+/* body {
   background-color: #ffefa0;
+} */
+
+/* navBar ----------------------------------------------------------------------------------------------------- */
+
+.navList {
+  display: flex;
+  width: 60%;
+  padding: 20px;
+  list-style: none;
+  position: absolute;
+  background-color: #02576c;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
 }
 
-.e1 {
-  border: 1px solid;
-  font-size: large;
-  font-weight: bold;
-  margin-right: 1250px;
-  border-radius: 30px;
-  background: url("../img/5.jpg");
+.navList li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 150px 0;
+  letter-spacing: 2px;
+  font: bold 1.5rem "Original Surfer", cursive;
+  color: #ececec;
 }
-.e2 {
-  border: 1px solid;
-  margin-right: 1250px;
-  border-radius: 30px;
-  font-size: large;
-  font-weight: bold;
-  background: url("../img/download\ \(1\).jpg");
+
+.navList li a::after {
+  content: "";
+  height: 3px;
+  background-color: #38a3a5;
+  display: block;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  margin-left: 140px;
+  width: 0;
 }
-.e3 {
-  border: 1px solid;
-  margin-right: 1250px;
-  border-radius: 30px;
-  font-size: large;
-  font-weight: bold;
-  background: url("../img/download.png");
+
+.headerFP nav ul li a:hover::after {
+  width: 45%;
 }
-.e4 {
-  border: 1px solid;
-  margin-right: 1250px;
-  border-radius: 30px;
-  font-size: large;
-  font-weight: bold;
-  background: url("../img/download\ \(1\).jpg");
+
+/* data section ---------------------------------------------------------------------------- */
+.dataSection {
+  display: grid;
+  width: 80%;
+  margin: 15% auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 60% 60%;
+  gap: 15px;
 }
-.e5 {
-  border: 1px solid;
-  font-size: large;
-  font-weight: bold;
-  margin-right: 1250px;
-  border-radius: 30px;
-  background: url("../img/5.jpg");
+
+.dataList {
+  list-style: none;
+}
+
+.paris,
+.lima {
+  position: relative;
+}
+
+.paris {
+  left: 50%;
+}
+
+.lima {
+  right: -50%;
+}
+
+/* design data sections----------------------------------------------------------------------- */
+
+.place {
+  text-align: center;
+  border: 1px solid #561f55;
+  padding: 20px;
+  color: #fff;
+  font: 2rem bold;
+  line-height: 1.5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  opacity: 0.6;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  background-size: cover;
+}
+
+.seattle {
+  background: #d79771 url("../img/seattle.jpg") center;
+  background-size: cover;
+}
+
+.tokyo {
+  background: #d79771 url("../img/tokyo.jpg") center;
+  background-size: cover;
+}
+
+.dubai {
+  background: #d79771 url("../img/dubai.jpg") center;
+  background-size: cover;
+}
+
+.paris {
+  background: #d79771 url("../img/paris.jpg") center;
+  background-size: cover;
+}
+
+.lima {
+  background: #d79771 url("../img/lima.jpg") center;
+  background-size: cover;
+}
+
+.place:hover {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  opacity: 1;
+}
+
+/* design parag. and hover over section ----------------------------------------------------------- */
+
+.dataList a {
+  text-decoration: none;
+}
+
+.dataList h2 {
+  color: white;
+  font: 5rem bolder;
+  letter-spacing: 15px;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+
+.place:hover .dataList h2 {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.dataList li {
+  visibility: hidden;
+  background-color: #561f55;
+  letter-spacing: 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.place:hover .dataList li {
+  visibility: visible;
+}
+
+.icon {
+  margin: 0 5%;
 }
