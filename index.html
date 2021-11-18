@@ -21,28 +21,20 @@
                 d="M0,64L0,224L1440,224L1440,0L0,0L0,0Z"></path>
             <defs>
                 <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                    <stop offset="5%" stop-color="#002bdcff"></stop>
-                    <stop offset="95%" stop-color="#32ded4ff"></stop>
+                    <stop offset="5%" stop-color="#014f63"></stop>
+                    <stop offset="95%" stop-color="#009DAE"></stop>
                 </linearGradient>
             </defs>
         </svg>
 
-        <div class="logoContainer">
-            <!-- <div class="leftLogo logo">
-                <img class="logo1" src="./img/salmon.png" alt="salmon">
-            </div>
+        <h1 class="title">cookie stand</h1>
 
-            <div class="rightLogo logo">
-                <img class="logo1" src="./img/salmon.png" alt="salmon">
-            </div>
-            <h1 class="title">cookie stand</h1> -->
-            <!-- <img class="logo1" src="./img/salmon.png" alt="salmon">
-            <img class="logo2" src="./img/chinook.jpg" alt="">
-            <img class="logo3" src="./img/cutter.jpeg" alt="">
-            <img class="logo4" src="./img/family.jpg" alt="">
-            <img class="logo5" src="./img/fish (1).jpg" alt="">
-            <img class="logo6" src="./img/fish.jpg" alt="">
-            <img class="logo7" src="./img/shirt.jpg" alt=""> -->
+        <div class="leftLogo">
+            <a href="./index.html"><img class="leftImg" src="./img/cookie.jpg" alt="coocie stand logo"></a>
+        </div>
+
+        <div class="rightLogo">
+            <a href="./index.html"><img class="rightImg" src="./img/cookie...jpg" alt="coocie stand logo"></a>
         </div>
 
         <nav class="navTag">
@@ -130,25 +122,56 @@
     </main>
 
     <footer>
-        <h4 class="footerP">all right reserved</h4>
         <div class="socialContainer">
-            <div class="social facebook"><i class="fab fa-facebook-square fa-3x"></i></div>
-            <div class="social twitter"><i class="fab fa-twitter-square fa-3x"></i></div>
-            <div class="social instagram"><i class="fab fa-instagram-square fa-3x"></i></div>
-            <div class="social whatsapp"><i class="fab fa-whatsapp-square fa-3x"></i></div>
+            <a href="#" class="social facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="#" class="social twitter"><i class="fab fa-twitter-square fa-3x"></i></a>
+            <a href="#" class="social instagram"><i class="fab fa-instagram-square fa-3x"></i></a>
+            <a href="#" class="social whatsapp"><i class="fab fa-whatsapp-square fa-3x"></i></a>
         </div>
+
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="629" height="250" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=ny&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://fmovies-online.net"></a><br>
+            </div>
+        </div>
+
+        <div class="time">
+            <h5>current time</h5>
+            <h6>amman: <span id='date-time-amman'></span>.</h6>
+            <h6>tokyo: <span id='date-time-tokyo'></span>.</h6>
+            <h6>seattle: <span id='date-time-seattle'></span>.</h6>
+            <h6>dubai: <span id='date-time-dubai'></span>.</h6>
+            <h6>lima: <span id='date-time-lima'></span>.</h6>
+            <h6>paris: <span id='date-time-paris'></span>.</h6>
+        </div>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+            <path stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity=".8"
                 d="M0,192L0,32L1440,32L1440,320L0,320L0,320Z"></path>
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                    <stop offset="5%" stop-color="#002bdcff"></stop>
-                    <stop offset="95%" stop-color="#32ded4ff"></stop>
-                </linearGradient>
-            </defs>
         </svg>
     </footer>
-    <script></script>
+
+    <script>
+        var dt = new Date();
+        document.getElementById("date-time-amman").innerHTML = dt.toLocaleTimeString();
+
+        var dt = new Date("2021-11-18T17:20:00.000+01:00");
+        document.getElementById("date-time-tokyo").innerHTML = dt.toLocaleTimeString();
+
+        var dt = new Date("2021-11-18T00:25:00.000+18:00");
+        document.getElementById("date-time-seattle").innerHTML = dt.toLocaleTimeString();
+
+        var dt = new Date("2021-11-18T00:29:00.000+07:00");
+        document.getElementById("date-time-dubai").innerHTML = dt.toLocaleTimeString();
+
+        var dt = new Date("2021-11-18T00:20:00.000+01:00");
+        document.getElementById("date-time-lima").innerHTML = dt.toLocaleTimeString();
+
+        var dt = new Date("2021-11-18T00:20:00.000+00:00");
+        document.getElementById("date-time-paris").innerHTML = dt.toLocaleTimeString();
+    </script>
 </body>
 
 </html>

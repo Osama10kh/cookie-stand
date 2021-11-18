@@ -1,35 +1,150 @@
-@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+/* font family */
 
-/*font-family: "Original Surfer", cursive;  */
+@import url("https://fonts.googleapis.com/css2?family=Praise&family=Shippori+Antique&family=ZCOOL+XiaoWei&display=swap");
 
-/* animation */
+/* font-family: 'Praise', cursive;
+font-family: 'Shippori Antique', sans-serif;
+font-family: 'ZCOOL XiaoWei', serif; */
+
+/* pag setup -------------------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "ZCOOL XiaoWei", serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f1f7e7;
+}
+
+/* -------------------------------------------------------------------------variables  */
+
+:root {
+  --background-element-color: #561f55;
+  --text-color: #f9f9f9;
+  --title-font-family: "ZCOOL XiaoWei", serif;
+  --primery-font-family: "Shippori Antique", sans-serif;
+  --title-font-size: 3rem;
+  --primery-font-size: 1.5rem;
+  --secondery-font-size: 1rem;
+  --letter-spacing: 0.1rem;
+}
+
+/*--------------------------------------------------------------------------- reapeated ---- */
+
+.leftLogo,
+.rightLogo,
+.navList li a::after,
+.dataList li {
+  background-color: var(--background-element-color);
+}
+
+.dataList h2,
+.title,
+.navList li a,
+.place {
+  color: var(--text-color);
+}
+
+.navList li a,
+.time {
+  font-family: var(--primery-font-family);
+}
+
+.leftLogo,
+.rightLogo,
+.title,
+.navList,
+footer::after,
+footer::before,
+.mapouter,
+.time {
+  position: absolute;
+}
+
+.title,
+.navList li a,
+.place,
+footer {
+  text-transform: capitalize;
+}
+
+.title,
+.navList li a,
+.dataList h2,
+.dataList li,
+.time {
+  letter-spacing: var(--letter-spacing);
+}
+
+.place:hover .dataList h2,
+.navList li a::after,
+.place {
+  transition: 0.6s ease-out;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -ms-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+}
+
+.navList li a,
+footer h5,
+.time {
+  font-size: var(--primery-font-size);
+}
+
+/* ------------------------------------------------------------------animation */
+
 @keyframes flash {
   50% {
     opacity: 0;
   }
 }
 
-/* pag setup ------------------------------------------------------------------------------------------------ */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@keyframes colors {
+  50% {
+    color: #561f55;
+  }
 }
 
-/* body {
-  background-color: #ffefa0;
-} */
+/* ---------------------------------------------------------------------logo */
 
-/* logo */
-
-/* .logoContainer {
+.leftLogo,
+.rightLogo {
+  width: 300px;
+  height: 200px;
+  box-shadow: 4px 4px 4px black;
+  top: 10px;
 }
 
-.logo {
+.leftLogo {
+  left: 10px;
+}
+
+.rightLogo {
+  right: 10px;
+}
+
+.leftImg,
+.rightImg {
+  width: 300px;
+  height: 200px;
 }
 
 .title {
-} */
+  font-size: var(--title-font-size);
+  top: 10%;
+  left: 41%;
+  transform: translate(-50px, -50px);
+  -webkit-transform: translate(-50px, -50px);
+  -moz-transform: translate(-50px, -50px);
+  -ms-transform: translate(-50px, -50px);
+  -o-transform: translate(-50px, -50px);
+  animation: colors 2s infinite alternate;
+  -webkit-animation: colors 2s infinite alternate;
+}
 
 /* navBar ----------------------------------------------------------------------------------------------------- */
 
@@ -37,30 +152,18 @@
   display: flex;
   width: 60%;
   padding: 20px;
-  list-style: none;
-  position: absolute;
-  background-color: #014f63;
   left: 50%;
-  top: 3%;
+  top: 15%;
   transform: translate(-50%, 0%);
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
   -o-transform: translate(-50%, 0%);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .navList li a {
   text-decoration: none;
-  text-transform: capitalize;
   margin: 0 120px;
-  letter-spacing: 2px;
-  font: bold 1.5rem "Original Surfer", cursive;
-  color: #ececec;
 }
 
 .navList li {
@@ -70,13 +173,7 @@
 .navList li a::after {
   content: "";
   height: 3px;
-  background-color: #0099ff;
   display: block;
-  transition: 0.5s ease-out;
-  -webkit-transition: 0.5s ease-out;
-  -moz-transition: 0.5s ease-out;
-  -ms-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
   margin-left: 120px;
   width: 0;
 }
@@ -94,19 +191,13 @@
   gap: 15px;
 }
 
-.dataList {
-  list-style: none;
-}
-
 /* design data sections----------------------------------------------------------------------- */
 
 .place {
-  text-transform: capitalize;
   text-align: center;
   border: 1px solid #561f55;
   padding: 20px;
-  color: #fff;
-  font: 2rem bold;
+  font: var(--title-font-size) bold;
   line-height: 1.5;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -116,12 +207,6 @@
   opacity: 0.6;
   filter: blur(1px);
   -webkit-filter: blur(1px);
-  transition: 0.8s;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
-  background-size: cover;
 }
 
 .seattle {
@@ -177,9 +262,7 @@
 }
 
 .dataList h2 {
-  color: white;
   font: 5rem bolder;
-  letter-spacing: 15px;
   transform: translateY(100%);
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
@@ -193,17 +276,10 @@
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
   -o-transform: translateY(0%);
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
 }
 
 .dataList li {
   visibility: hidden;
-  background-color: #561f55;
-  letter-spacing: 5px;
   margin-top: 5px;
   text-align: left;
 }
@@ -222,9 +298,69 @@ footer {
   position: relative;
 }
 
+footer::after,
+footer::before {
+  content: "";
+  width: 3px;
+  height: 250px;
+  background-color: #f9f9f9;
+  top: 62px;
+}
+
+footer::after {
+  left: 190px;
+}
+
+footer::before {
+  left: 1060px;
+}
+
+/* first div  */
+
 .socialContainer {
   display: flex;
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
+  position: fixed;
+  flex-direction: column;
+  top: 65%;
+}
+
+.social {
+  color: #000000;
+}
+
+.facebook:hover {
+  color: #0f00ff;
+}
+
+.twitter:hover {
+  color: #32c1cd;
+}
+
+.instagram:hover {
+  color: #e02401;
+}
+
+.whatsapp:hover {
+  color: #06623b;
+}
+
+/* second div  */
+
+.mapouter {
+  left: 20%;
+  bottom: 20px;
+  box-shadow: 6px 6px 6px black;
+}
+
+/* third div  */
+
+.time {
+  width: 400px;
+  top: 25%;
+  right: 0%;
+}
+
+footer h6 {
+  margin-top: 10px;
+  font-size: var(--secondery-font-size);
 }
